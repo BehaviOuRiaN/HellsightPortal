@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hellsight.eu - Gaming Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">Hellsight.eu</div>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link">Domov</a></li>
+                <li><a href="#games" class="nav-link">Hry</a></li>
+                <li><a href="#community" class="nav-link">Komunita</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Vítaj v Hellsight.eu</h1>
+            <p class="hero-subtitle">Objavuj najlepšie hry komunity</p>
+            <button class="btn btn-primary" onclick="scrollToGames()">Preskúmať hry</button>
+        </div>
+    </section>
+
+    <!-- Games Catalog -->
+    <section id="games" class="games">
+        <div class="container">
+            <h2 class="section-title">Katalóg Hier</h2>
+            <div class="games-grid">
+                <!-- Game Card 1 -->
+                <div class="game-card">
+                    <div class="game-image">
+                        <img src="https://multitheftauto.com/images/logo.png" alt="Multi Theft Auto">
+                    </div>
+                    <div class="game-info">
+                        <h3 class="game-title">Multi Theft Auto</h3>
+                        <p class="game-description">Legendárna modifikácia s nezlámanými možnosťami multiplayer hrania.</p>
+                        <a href="https://multitheftauto.com/" target="_blank" class="btn btn-outline">Navštíviť</a>
+                    </div>
+                </div>
+
+                <!-- Game Card 2 -->
+                <div class="game-card">
+                    <div class="game-image">
+                        <img src="https://cdn.akamai.steamstatic.com/steam/apps/221100/header.jpg" alt="DayZ">
+                    </div>
+                    <div class="game-info">
+                        <h3 class="game-title">DayZ</h3>
+                        <p class="game-description">Survival MMO kde každý deň je boj o prežitie v post-apokalyptickej svete.</p>
+                        <a href="https://store.steampowered.com/app/221100/DayZ/" target="_blank" class="btn btn-outline">Navštíviť</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Section -->
+    <section id="community" class="community">
+        <div class="container">
+            <h2 class="section-title">Naša Komunita</h2>
+            <p class="community-subtitle">Pripoj sa k nám na Discorde a staň sa súčasťou rodiny Hellsight.eu</p>
+            
+            <div class="discord-container">
+                <div class="discord-card">
+                    <h3>Discord Server</h3>
+                    <div class="discord-info">
+                        <div class="member-count" id="memberCount">
+                            <span class="loading">Načítavam...</span>
+                        </div>
+                        <a href="https://discord.gg/X4mMVWFKZ2" target="_blank" class="btn btn-primary">Pridaj sa na Discord</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Discord Widget -->
+            <div class="discord-widget">
+                <iframe src="https://discord.com/widget?id=1252435098644439061&theme=dark" width="100%" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Hellsight.eu. Všetky práva vyhradené.</p>
+            <div class="footer-links">
+                <a href="https://discord.gg/X4mMVWFKZ2" target="_blank">Discord</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
